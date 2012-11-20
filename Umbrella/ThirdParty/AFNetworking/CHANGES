@@ -1,3 +1,42 @@
+= master
+
+ * Moved __unused keywords for better Xcode indexing (Christian Rasmussen)
+
+ * Sorting dictionary keys with `caseInsensitiveCompare:` to ensure 
+ deterministic ordering of query string parameters, which may otherwise 
+ cause ambiguous representations of nested parameters (James Coleman, 
+ Mattt Thompson)
+
+= 1.0.1 / 2012-11-01
+
+ * Fix error in multipart upload streaming, where byte range at boundaries
+was not correctly calculated (Stan Chang Khin Boon)
+
+ * If a success block is specified to `UIImageView -setImageWithURLRequest:
+placeholderImage:success:failure`:, it is now the responsibility of the
+block to set the image of the image view (Mattt Thompson)
+
+ * Add `JSONReadingOptions` property to `AFJSONRequestOperation` (Jeremy 
+ Foo, Mattt Thompson)
+
+ * Using __weak self / __strong self pattern to break retain cycles in
+ background task and network reachability blocks (Jerry Beers, Dan Weeks)
+
+ * Fix parameter encoding to leave period (`.`) unescaped (Diego Torres)
+
+ * Fixing last file component in multipart form part creation (Sylver 
+ Bruneau) 
+ 
+ * Remove executable permission on AFHTTPClient source files (Andrew 
+ Sardone)
+
+ * Fix warning (error with -Werror) on implicit 64 to 32 conversion (Dan
+ Weeks)
+
+ * Add GitHub's .gitignore file (Nate Stedman)
+
+ * Updates to README (@ckmcc)
+
 = 1.0 / 2012-10-15
 
  * AFNetworking now requires iOS 5 / Mac OSX 10.7 or higher (Mattt Thompson)
