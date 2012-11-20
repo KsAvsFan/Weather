@@ -345,7 +345,7 @@
 				GCC_PREFIX_HEADER = "Umbrella/Umbrella-Prefix.pch";
 				INFOPLIST_FILE = "Umbrella/Umbrella-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Weverything";
+				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -357,7 +357,7 @@
 				GCC_PREFIX_HEADER = "Umbrella/Umbrella-Prefix.pch";
 				INFOPLIST_FILE = "Umbrella/Umbrella-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Weverything";
+				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
