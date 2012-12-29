@@ -7,7 +7,13 @@
 //
 
 #import "UMBFlipsideViewController.h"
+#import "Constants.h"
+#import "CustomCell.h"
 
 @interface UMBMainViewController : UIViewController <UMBFlipsideViewControllerDelegate>
+{
+    IBOutlet UIImageView*       iboBackgroundImage;
+    IBOutlet UITableView*       iboTableView;
+}
 
 @end
