@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F7EC6C5168CDA4800EC5842 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7EC6C4168CDA4800EC5842 /* Default-568h@2x.png */; };
+		1F2EE13116928DD600AB327F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2EE13016928DD600AB327F /* SystemConfiguration.framework */; };
 		1F7EC6E5168CDAFD00EC5842 /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7EC6C8168CDAFD00EC5842 /* button_background.png */; };
 		1F7EC6E6168CDAFD00EC5842 /* button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7EC6C9168CDAFD00EC5842 /* button_background@2x.png */; };
 		1F7EC6E7168CDAFD00EC5842 /* checkmark_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7EC6CA168CDAFD00EC5842 /* checkmark_off.png */; };
@@ -41,6 +41,7 @@
 		1F7EC708168CDB2600EC5842 /* UmbrellaSettingsScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7EC705168CDB2600EC5842 /* UmbrellaSettingsScreen.png */; };
 		1F7EC745168D2FF400EC5842 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EC744168D2FF300EC5842 /* CustomCell.m */; };
 		1F7EC747168D4CF600EC5842 /* UmbrellaDetailScreen02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7EC746168D4CF600EC5842 /* UmbrellaDetailScreen02.png */; };
+		1F7F3DD916939E7600392418 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F3DD816939E7600392418 /* MobileCoreServices.framework */; };
 		585688AD160131D600AD5C9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585688AC160131D600AD5C9D /* UIKit.framework */; };
 		585688AF160131D600AD5C9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585688AE160131D600AD5C9D /* Foundation.framework */; };
 		585688B1160131D600AD5C9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585688B0160131D600AD5C9D /* CoreGraphics.framework */; };
@@ -63,7 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F7EC6C4168CDA4800EC5842 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1F2EE13016928DD600AB327F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1F7EC6C4168CDA4800EC5842 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		1F7EC6C8168CDAFD00EC5842 /* button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background.png; sourceTree = "<group>"; };
 		1F7EC6C9168CDAFD00EC5842 /* button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_background@2x.png"; sourceTree = "<group>"; };
 		1F7EC6CA168CDAFD00EC5842 /* checkmark_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark_off.png; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		1F7EC743168D2FF300EC5842 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ViewControllers/CustomCell.h; sourceTree = "<group>"; };
 		1F7EC744168D2FF300EC5842 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ViewControllers/CustomCell.m; sourceTree = "<group>"; };
 		1F7EC746168D4CF600EC5842 /* UmbrellaDetailScreen02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UmbrellaDetailScreen02.png; sourceTree = "<group>"; };
+		1F7F3DD816939E7600392418 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		585688A8160131D600AD5C9D /* Umbrella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Umbrella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		585688AC160131D600AD5C9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		585688AE160131D600AD5C9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7F3DD916939E7600392418 /* MobileCoreServices.framework in Frameworks */,
+				1F2EE13116928DD600AB327F /* SystemConfiguration.framework in Frameworks */,
 				585688AD160131D600AD5C9D /* UIKit.framework in Frameworks */,
 				585688AF160131D600AD5C9D /* Foundation.framework in Frameworks */,
 				585688B1160131D600AD5C9D /* CoreGraphics.framework in Frameworks */,
@@ -156,6 +161,7 @@
 			children = (
 				1F7EC702168CDB0500EC5842 /* Comps */,
 				1F7EC6C8168CDAFD00EC5842 /* button_background.png */,
+				1F7EC6C4168CDA4800EC5842 /* Default-568h@2x.png */,
 				1F7EC6C9168CDAFD00EC5842 /* button_background@2x.png */,
 				1F7EC6CA168CDAFD00EC5842 /* checkmark_off.png */,
 				1F7EC6CB168CDAFD00EC5842 /* checkmark_off@2x.png */,
@@ -201,7 +207,6 @@
 		5856889D160131D600AD5C9D = {
 			isa = PBXGroup;
 			children = (
-				1F7EC6C4168CDA4800EC5842 /* Default-568h@2x.png */,
 				585688B2160131D600AD5C9D /* Umbrella */,
 				585688AB160131D600AD5C9D /* Frameworks */,
 				585688A9160131D600AD5C9D /* Products */,
@@ -219,6 +224,8 @@
 		585688AB160131D600AD5C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F7F3DD816939E7600392418 /* MobileCoreServices.framework */,
+				1F2EE13016928DD600AB327F /* SystemConfiguration.framework */,
 				585688AC160131D600AD5C9D /* UIKit.framework */,
 				585688AE160131D600AD5C9D /* Foundation.framework */,
 				585688B0160131D600AD5C9D /* CoreGraphics.framework */,
@@ -364,7 +371,6 @@
 			files = (
 				585688B7160131D600AD5C9D /* InfoPlist.strings in Resources */,
 				585688C0160131D600AD5C9D /* MainStoryboard.storyboard in Resources */,
-				1F7EC6C5168CDA4800EC5842 /* Default-568h@2x.png in Resources */,
 				1F7EC6E5168CDAFD00EC5842 /* button_background.png in Resources */,
 				1F7EC6E6168CDAFD00EC5842 /* button_background@2x.png in Resources */,
 				1F7EC6E7168CDAFD00EC5842 /* checkmark_off.png in Resources */,

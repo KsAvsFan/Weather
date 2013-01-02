@@ -22,15 +22,10 @@
     IBOutlet UIButton*      iboCentigradeButton;
     IBOutlet UIImageView*   iboBackgroundImage;
     IBOutlet UIButton*      iboShowWeatherButton;
-//    IBOutlet UIView*        iboDottedLine1;
-//    IBOutlet UIView*        iboDottedLine2;
-//    IBOutlet UIView*        iboDottedLine3;
-//    IBOutlet UIView*        iboDottedLine4;
-//    IBOutlet UIView*        iboDottedLine5;
-    
 }
 
 @property (weak, nonatomic) id <UMBFlipsideViewControllerDelegate> delegate;
+@property (strong, nonatomic) NSMutableDictionary* userPreferences;
 
 - (IBAction)done:(id)sender;
 - (IBAction)updateTemperatureScale:(UIButton*)sender;

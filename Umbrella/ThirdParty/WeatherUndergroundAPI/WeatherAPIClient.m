@@ -7,6 +7,9 @@
 //
 
 #import "WeatherAPIClient.h"
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
 
 @interface WeatherAPIClient ()
 
@@ -25,12 +28,16 @@ NSString * const kWeatherAPIClientErrorDomain = @"com.nerdery.weather";
 NSInteger const kWeatherAPIClientErrorCodeGeneric = 1000;
 NSInteger const kWeatherAPIClientErrorCodeNoAPIKey = 1001;
 
+// UserSpecific API Key
+
+
 @implementation WeatherAPIClient
 
 #pragma mark - Singleton creation
 
 + (WeatherAPIClient *)sharedClient
 {
+
     static WeatherAPIClient *_sharedClient = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
