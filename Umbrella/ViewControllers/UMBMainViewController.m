@@ -146,7 +146,15 @@
     iboTemp.text = [NSString stringWithFormat:@"%d%@", stringInt, @"\u00B0"];
     
     // Get current conditions and update UI
-    iboConditions.text = [[[self.todayArray objectAtIndex:0] valueForKeyPath:@"condition"] uppercaseString];
+    
+    // TODO: Jamie - Need to test this between 11pm and midnight
+    
+    if ([self.todayArray objectAtIndex:0]) {
+        iboConditions.text = [[[self.todayArray objectAtIndex:0] valueForKeyPath:@"condition"] uppercaseString];
+    }
+    else {
+        iboConditions.text = [[[self.tomorrowArray objectAtIndex:0] valueForKeyPath:@"condition"] uppercaseString];
+    }
 }
 
 - (void)didReceiveMemoryWarning

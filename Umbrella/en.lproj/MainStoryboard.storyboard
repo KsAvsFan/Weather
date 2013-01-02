@@ -443,47 +443,6 @@
     <resources>
         <image name="checkmark_off@2x.png" width="42" height="26"/>
     </resources>
-    <classes>
-        <class className="CustomCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="weatherCondition" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="weatherIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="weatherTemp" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="weatherTime" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UMBFlipsideViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UMBFlipsideViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="updateTemperatureScale:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="iboBackgroundImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="iboCentigradeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="iboFarenheitButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="iboShowWeatherButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="iboZipCodeTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="UMBMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UMBMainViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="iboActivityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="iboActivityObfuscationView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="iboBackgroundImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="iboConditions" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="iboHumidity" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="iboLocation" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="iboPrecipitation" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="iboTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="iboTemp" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="iboWindSpeed" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

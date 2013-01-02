@@ -3,7 +3,7 @@
 //  Local Weather
 //
 //  Created by Jonathan Rexeisen on 7/23/12.
-//  Copyright (c) 2012 The Nerdery. All rights reserved.
+//  Copyright (c) 2012 The N e r d e r y. All rights reserved.
 //
 
 #import <CoreLocation/CoreLocation.h>
