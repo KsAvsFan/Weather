@@ -49,6 +49,7 @@
     self.tomorrowArray = [@[] mutableCopy];
     self.dayAfterTomorrowArray = [@[] mutableCopy];
     
+    
     [_myWeatherClient getForcastAndConditionsForZipCode:zipcode withCompletionBlock:^(BOOL success, NSDictionary *result, NSError *error) {
         
         // check for internet connection
@@ -63,7 +64,7 @@
         
         // Enumerate over returned hourly results, separate into separate data structures to simply tableview population
         NSMutableArray *testArray = [result valueForKey:@"hourly_forecast"];
-        NSLog(@"%@", testArray);
+        // NSLog(@"%@", testArray);
         for (NSDictionary* currentDictionary in testArray)
         {
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -146,9 +147,6 @@
     iboTemp.text = [NSString stringWithFormat:@"%d%@", stringInt, @"\u00B0"];
     
     // Get current conditions and update UI
-    
-    // TODO: Jamie - Need to test this between 11pm and midnight
-    
     if ([self.todayArray objectAtIndex:0]) {
         iboConditions.text = [[[self.todayArray objectAtIndex:0] valueForKeyPath:@"condition"] uppercaseString];
     }
